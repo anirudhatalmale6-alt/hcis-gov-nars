@@ -1,0 +1,54 @@
+NARS on the Government box
+30 September 2026
+
+
+WHAT THIS IS
+
+  NARS is a separate application from HCIS. Assessors use it to carry out an
+  assessment; once one is completed and released it appears in HCIS under
+  Needs Assessment.
+
+  The catch-up you ran yesterday put the NARS database work onto this machine
+  - the tables, the functions, the feed into HCIS. It did not include the NARS
+  application itself, which is why nothing appeared. That is what this adds.
+
+  I should have been clearer about that distinction at the time. The catch-up
+  carried the plumbing; this carries the taps.
+
+
+TO INSTALL
+
+  Right-click DEPLOY-NARS.bat and choose "Run as administrator".
+
+  It backs up the whole site first, copies NARS in, and then proves it has not
+  touched HCIS - it compares HCIS's own page and config.js before and after and
+  stops if either has changed.
+
+  It also refuses to run if any NARS file would overwrite one of HCIS's. They
+  have different names today, and the script checks rather than trusting that.
+
+
+WHERE IT LIVES
+
+  Same address as HCIS with /nars on the end:
+
+    http://localhost/nars/
+
+  It is inside the HCIS site rather than a second website, because this box
+  runs IIS and a second site would mean another port, another firewall rule
+  and another thing to forget. NARS navigates by #hash, so it runs from a
+  sub-folder without any rewrite rules.
+
+
+SIGNING IN
+
+  The same accounts as HCIS. Same database, same sign-in. An account with an
+  assessor role will see the assessment screens.
+
+
+HOW IT WAS CHECKED
+
+  Not by reasoning about paths. A copy of this box's site was built here with
+  the real HCIS build in place, NARS installed onto it with this script, and
+  then a browser opened /nars/ - the sign-in page rendered, all seven of its
+  files loaded, nothing 404'd, and HCIS still loaded normally at /.

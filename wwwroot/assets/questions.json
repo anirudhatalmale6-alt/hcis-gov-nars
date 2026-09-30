@@ -1,0 +1,566 @@
+{
+  "source": "Health Department KoboToolbox exports, 2 September 2026",
+  "note": "Matched on question number. The two exports do not share column positions.",
+  "questions": [
+    {
+      "number": 1,
+      "group": "Self-care",
+      "en": "Use of toilet and intimate hygiene",
+      "kr": "Lizaz twalet e lizyenn entim",
+      "options": [
+        {
+          "score": 0,
+          "en": "Uses the toilet independently, maintains the intimate hygiene and keeps the toilet clean (No problem)",
+          "kr": "I servi twalet li menm, i mentenir son lizyenn entim, e i gard twalet prop (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Uses the toilet independently but needs to be reminded to clean the toilet and maintain the intimate hygiene (Moderate problem)",
+          "kr": "I servi twalet li menm, me i bezwen ganny rapel pour netway twalet e mentenir son lizyenn entim (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Needs help of other person to use the toilet and maintain the intimate hygiene and the toilet (Severe problem)",
+          "kr": "I bezwen led en lot dimoun pour servi twalet e pour mentenir son lizyenn entim ek lapropte twalet (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Does not use the toilet on her own, cannot maintain the intimate hygiene and not able to clean the toilet (Very severe or total problem)",
+          "kr": "Pa servi twalet li menm, pa kapab mentenir son lizyenn entim, e i pa kapab netway twalet (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "group": "Self-care",
+      "en": "Dressing and undressing",
+      "kr": "Abiye ek dezabiye",
+      "options": [
+        {
+          "score": 0,
+          "en": "Dresses and undresses independently and appropriate for weather and occasion. Keeps the clothes clean and neat (No problem)",
+          "kr": "I abiye e dezabiye li menm, e son lenz i apropriye pour letan ek lokazyon. I gard son lenz prop e annord (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Dresses and undresses independently but may need some assistance and reminding about selecting appropriate clothing and keeping it clean and neat (Moderate problem)",
+          "kr": "I abiye e dezabiye li menm, me i kapab bezwen en pti led oubyen ganny rapel pour swazir lenz ki apropriye e pour gard zot prop e annord (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Puts on and off simple pieces of clothing. Needs help for more complex dressing or undressing. Needs help to keep the clothes clean and neat and to choose appropriate clothing (Severe problem)",
+          "kr": "I met e i tir bann pti lenz senp. I bezwen led pour bann lenz ki pli konplike pour abiye oubyen dezabiye. I bezwen led pour gard son lenz prop e annord e pour swazir lenz ki apropriye (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot dress or undress. Cannot choose appropriate clothing and not able to keep the clothes clean and tidy (Very severe or total problem)",
+          "kr": "Pa kapab abiye oubyen dezabiye. Pa kapab swazir lenz ki apropriye e i pa kapab gard son lenz prop e annord (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "group": "Self-care",
+      "en": "Eating and drinking",
+      "kr": "Manze ek bwar",
+      "options": [
+        {
+          "score": 0,
+          "en": "Eats and drinks on her own with appropriate habits and manners (No problem)",
+          "kr": "I manze e bwar, lo li menm avek bann konportman ek manni aprorpiye (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Able to eat and drink independently but lacks appropriate habits and manners (makes a mess when eating, cannot clean the dishes)  (Moderate problem)",
+          "kr": "I kapab manze e bwar li tousel, me i mank bann bon konportman ek manni (i fer dezord ler i manze, e i pa kapab lav lasyet) (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Eats and drinks with help from others or assistive aidss (Severe problem)",
+          "kr": "I manze e bwar avek led lezot dimoun oubyen avek bann lekipman spesyal. (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot take food and drink on his or her own. Needs to be fed (Very severe or total problem)",
+          "kr": "I pa kapab manze ni bwar li tousel. I bezwen lezot dimoun pour fer li bwar e manze (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "group": "Self-care",
+      "en": "Preparing food",
+      "kr": "Prepar Manze",
+      "options": [
+        {
+          "score": 0,
+          "en": "Cooks independently (No problem)",
+          "kr": "I kapab kwi manze li menm (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Prepare simple meals independently but not more complex ones (makes a mess when eating, cannot clean the dishes)  (Moderate problem)",
+          "kr": "I prepar bann manze senp li tousel me pa bann tro konpleks (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Cooks, but only very simple meals and with help (Severe problem)",
+          "kr": "I kwi, me zis bann manze vreman senp e avek led (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot do it at all (Very severe or total problem)",
+          "kr": "Pa kapab kwi ditou (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "group": "Self-care",
+      "en": "Personal hygiene, washing, and bathing",
+      "kr": "Lizyenn personnel, lave e bennyen",
+      "options": [
+        {
+          "score": 0,
+          "en": "Maintains personal hygiene independently (washes hands, face, feet, showers, and bathes) (No problem)",
+          "kr": "I fer son lizyenn personnel li menm (lav lanmen figir, lipye, e bennyen) (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Maintains personal hygiene independently but needs to be reminded or needs to develop hygiene habits (Moderate problem)",
+          "kr": "I fer son lizyenn personnel li menm me i bezwen ganny rapel pour devlop bann bon labitid lizyenn (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Needs assistance or technical aids to maintain personal hygiene, bathe, and wash (Severe problem)",
+          "kr": "I bezwen lasistans oubyen lekipman teknik pour fer son lizyenn personnel, bennyen, e lave (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Not capable to wash and bathe and does not have hygiene habits (Very severe or total problem)",
+          "kr": "I pa kapab bennyen e lave, e i napa labitid lizyenn (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "group": "Communicating",
+      "en": "Communicating verbally",
+      "kr": "Kominikasyon Verbal",
+      "options": [
+        {
+          "score": 0,
+          "en": "Communicates effectively. Can express herself/himself clearly and fully understands others (No problem)",
+          "kr": "I kominik byen. I kapab eksprim son lekor klerman e i konpran lezot parfetman (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Understands others well but has difficulties expressing herself clearly (Moderate problem)",
+          "kr": "I konpran lezot byen, me i ganny difikilte pour eksprim son lekor klerman (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Has difficulties expressing herself/himself and understanding others and needs assistance or technical aid (Severe problem)",
+          "kr": "I ganny difikilte pour eksprim son lekor e pour konpran lezot, e i bezwen lasistans oubyen led teknik (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Limited or no capacity of communication (Very severe or total problem)",
+          "kr": "I napa oubyen son kapasite kominikasyon i limite (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "group": "Communicating",
+      "en": "Reading and understanding signs, symbols, and words",
+      "kr": "Lir e konpran bann siny, senbol, ek mo",
+      "options": [
+        {
+          "score": 0,
+          "en": "Reads and understands signs, symbols, and words (No problem)",
+          "kr": "I lir e konpran bann siny, senbol ek mo (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Understands others well but has difficulties expressing herself clearly (Moderate problem)",
+          "kr": "I lir, me i pa konpran tou bann siny, senbol ek mo (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Reads but cannot understand all signs, symbols, and words (Severe problem)",
+          "kr": "I lir e konpran selman si i ganny led avek lezot oubyen avek led teknik (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Limited or no capacity to read or understand signs, symbols, and words (Very severe or total problem)",
+          "kr": "I napa oubyen son kapasite kominikasyon i limite (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "group": "Mobility",
+      "en": "Mobility inside the house",
+      "kr": "Mobilite dan lakaz",
+      "options": [
+        {
+          "score": 0,
+          "en": "Moves freely and independently within the house (No problem)",
+          "kr": "I bouz libreman e endepandaman dan lakaz (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Moves independently but may need assistance on occasion, for example, to get out of bed or to climb stairs (Moderate problem)",
+          "kr": "I bouz endepandaman me parfwa i kapab bezwen led, par egzanp, pour leve lo lili oubyen pour mont leskalye (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Moves only with assistance or technical aid (Severe problem)",
+          "kr": "I bouz selman avek led oubyen avek en lekipman teknik (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot move at all (bedridden) (Very severe or total problem)",
+          "kr": "I pa kapab bouz ditou (i reste zis lo lili). (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "group": "Mobility",
+      "en": "Mobility outside the house",
+      "kr": "Mobilite an deor lakaz",
+      "options": [
+        {
+          "score": 0,
+          "en": "Moves independently and fully: walking, jumping, running, etc (No problem)",
+          "kr": "I bouz endepandaman e konpletman: i marse, i sote, i taye, eksetera (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Moves independently. Does not run and jump, walk longer distances, across uneven terrain, uphill or with other obstacles (Moderate problem)",
+          "kr": "I bouz endepandaman. I pa taye, ni sote, i pa mars en long distans, lo en teren ki pa nivo, an montan oubyen kot i annan lezot lobstak (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Moves outside the house but only with help from another person or a technical aid (Severe problem)",
+          "kr": "I bouz an deor lakaz me selman avek led en lot dimoun oubyen en lekipman teknik. (roblenm i sever)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot move at all (Very severe or total problem)",
+          "kr": "Pa kapab bouz ditou (Problenm tre sever oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "group": "Mobility",
+      "en": "Orienting oneself",
+      "kr": "Oriyant son lekor",
+      "options": [
+        {
+          "score": 0,
+          "en": "Fully orients herself/himself in known and unknown space (No problem)",
+          "kr": "I oriyant son lekor konpletman dan bann landrwa ki i konnen e ki i pa konnen (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Orient herself/himself in familiar space, but with difficulty in unfamiliar space (Moderate problem)",
+          "kr": null
+        },
+        {
+          "score": 2,
+          "en": "Needs help to orient herself/himself in familiar and unfamiliar space (Severe problem)",
+          "kr": "I oriyant son lekor dan bann landrwa ki i konnen, me i ganny difikilte dan bann landrwa ki i pa konnen (Problenm i sever)"
+        },
+        {
+          "score": 3,
+          "en": "Does not have a sense of orientation, even in familiar space (Very severe or total problem)",
+          "kr": "I napa okenn sans oriyantasyon, menm dan bann landrwa ki i konnen (Problenm tre sever oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "group": "Instrumental activities",
+      "en": "Maintaining health",
+      "kr": "Mentenir lasante",
+      "options": [
+        {
+          "score": 0,
+          "en": "Takes medicines, observes schedules, and attends therapy on her/his own (No problem)",
+          "kr": "I pran son medikaman, swiv son progranm, e al son bann terapi li tousel (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Takes medicines or therapies independently but may need to be reminded (Moderate problem)",
+          "kr": "I pran son medikaman oubyen al son bann terapi endepandaman me en dimoun i bezwen fer li rapel (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Takes medicines or therapies independently but prepared and supervised by another person (Severe problem)",
+          "kr": "I pran son medikaman oubyen al son bann terapi endepandaman me i ganny prepare e sipervize par en lot dimoun (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot take prescribed medication or participate in therapy (Very severe or total problem)",
+          "kr": "I pa kapab pran son medikaman ki'n ganny preskri oubyen partisip dan bann terapi (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "group": "Instrumental activities",
+      "en": "Using public transportation",
+      "kr": "Servi transpor piblik",
+      "options": [
+        {
+          "score": 0,
+          "en": "Uses public transport freely and independently (No problem)",
+          "kr": "I servi transpor piblik libreman e li tousel (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Uses public transport independently but has some difficulty orienting and respecting rules (Moderate problem)",
+          "kr": "I servi transpor piblik li tousel me i ganny en pe difikilte pour oriyant son lekor e respekte bann regleman (roblenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Uses public transport only when accompanied by another person or with technical aids or only when using public adapted transport (Severe problem)",
+          "kr": "I servi transpor piblik selman ler i akonpannyen par en lot dimoun oubyen avek bann led teknik, oubyen selman ler i servi transpor piblik ki'n ganny adapte (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot do it at all (Very severe or total problem)",
+          "kr": "I pa kapab fer li ditou (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "group": "Instrumental activities",
+      "en": "Using public services (utilities, government services, etc.)",
+      "kr": "Servi servis piblik (delo ek kouran, servis gouvernman, eks…)",
+      "options": [
+        {
+          "score": 0,
+          "en": "Uses public services on her/his own (No problem)",
+          "kr": "I servi servis piblik li tousel (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Understands the purpose of some public services and uses only some of them (Moderate problem)",
+          "kr": "I konpran bi serten servis piblik e i servi zis serten parmi zot (Problenm i modere)the purpose of some public services and uses only some of them (Moderate problem)"
+        },
+        {
+          "score": 2,
+          "en": "Needs assistance to use public services (someone to explain the purpose, provide help with the use of services, etc.) (Severe problem)",
+          "kr": "I bezwen lasistans pour servi servis piblik (en dimoun pour eksplik li bi sa bann servis, donn li led pour servi zot, eks.) (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Not able to use public services (Very severe or total problem)",
+          "kr": "I pa kapab servi servis piblik (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "group": "Instrumental activities",
+      "en": "Managing finances",
+      "kr": "Zesyon Finans",
+      "options": [
+        {
+          "score": 0,
+          "en": "Using and manages money (No problem)",
+          "kr": "I servi e zer larzan (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Understands the use of money and budgeting and management of money but may need supervision (Moderate problem)",
+          "kr": "I konpran valer larzan, koman pour fer bidze e koman pour zer larzan, me i kapab bezwen sipervizyon (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Needs assistance in using money and budgeting or managing money (Severe problem)",
+          "kr": "I bezwen lasistans pour servi larzan, fer bidze oubyen zer son larzan (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Does not understand the purpose, value, or use of money (Very severe or total problem)",
+          "kr": "I pa konpran bi, valer, oubyen koman pour servi larzan (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "group": "Instrumental activities",
+      "en": "Grocery shopping",
+      "kr": "Fer Konmisyon",
+      "options": [
+        {
+          "score": 0,
+          "en": "Does grocery shopping independently (No problem)",
+          "kr": "I fer konmisyon li menm (Napa problenm)"
+        },
+        {
+          "score": 1,
+          "en": "Does grocery shopping but needs supervisions to select items and spend money appropriately (Moderate problem)",
+          "kr": "I fer konmisyon me i bezwen sipervizyon pour swazir son bann keksoz e depans larzan dan en fason apropriye (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Needs assistance or technical aid to shop (Severe problem)",
+          "kr": "I bezwen lasistans oubyen led teknik pour fer komisyon Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot do it (Very severe or total problem)",
+          "kr": "I pa kapab fer li (Problenm i tre grav oubyen total)"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "group": "Instrumental activities",
+      "en": "Doing housework, keeping living area clean",
+      "kr": "Louvraz lakour e gard son lespas prop",
+      "options": [
+        {
+          "score": 0,
+          "en": "Doing housework, has fully developed habits of cleaning personal or common living space (No problem)",
+          "kr": "I fer louvraz lakour, e i'n deza devlop en bon labitid pour netway son lespas personnel oubyen lespas ki i partaz avek lezot. (No problem)"
+        },
+        {
+          "score": 1,
+          "en": "Does housework   for personal or common living space independently but needs to be reminded to do it and to be supervised (Moderate problem)",
+          "kr": "Does housework for personal or common living space independently but needs to be reminded to do it a (Problenm i modere)"
+        },
+        {
+          "score": 2,
+          "en": "Needs assistance with housework and to maintain personal or common living space (Severe problem)",
+          "kr": "I bezwen lasistans pour fer louvraz lakour e pour mentenir son lespas personnel oubyen komen (Problenm i grav)"
+        },
+        {
+          "score": 3,
+          "en": "Not capable of doing housework and maintaining own and common areas clean (Very severe or total problem)",
+          "kr": "I pa kapab fer louvraz lakour e mentenir son prop lespas oubyen bann lespas partaze prop (Problenm i tre grav oubyen totalm)"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "group": "Social participation",
+      "en": "Interacting with peers",
+      "kr": "Enterakte avek lezot",
+      "options": [
+        {
+          "score": 0,
+          "en": "Initiates, develops, and maintains contact with peers, fully engages in friendships. Leads active social life (No problem)",
+          "kr": "I inisye, devlope, e mentenir kontak avek lezot, e i antyerman angaze dan bann lanmitye. I viv en lavi sosyal aktif (No problem)"
+        },
+        {
+          "score": 1,
+          "en": "Interacts with peers but not frequently, needs to be reminded and the interaction is not always socially appropriate. Social life not very active but exists (Moderate problem)",
+          "kr": "I enterakte avek lezot me pa souvan, i bezwen ganny fer rapel pour fer li e sa bann enteraksyon i pa touzour apropriye sosyalman. Son lavi sosyal pa tro aktif me i egziste. (Moderate problem)"
+        },
+        {
+          "score": 2,
+          "en": "Cannot interact or communicate with peers without assistance or technical aid. With help, maintains friends and socializes with them (Severe problem)",
+          "kr": "I pa kapab enterakte oubyen kominik avek lezot san lasistans oubyen led teknik. Avek led, i mentenir son bann zanmi e i sosyalize avek zot (Severe problem)"
+        },
+        {
+          "score": 3,
+          "en": "Cannot interact with peers. Not capable to engage in social life (Very severe or total problem)",
+          "kr": "I pa kapab enterakte avek lezot. I pa kapab angaz li dan en lavi sosyal (Very severe or total problem)"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "group": "Social participation",
+      "en": "Participating in family relationships",
+      "kr": "Partisip dan bann relasyon familyal",
+      "options": [
+        {
+          "score": 0,
+          "en": "Successful and meaningful family relationships. Fully active in family life (No problem)",
+          "kr": "I annan bann relasyon familyal ki reisi e sinifikatif. I konpletman aktif dan lavi familyal (No problem)"
+        },
+        {
+          "score": 1,
+          "en": "Aware of the importance of family relations and wishes to participate but requires help (Moderate problem)",
+          "kr": "I konsyan lenportans bann relasyon familyal e i anvi partisip ladan me i bezwen led (Moderate problem)"
+        },
+        {
+          "score": 2,
+          "en": "Understands family relationships but cannot meaningfully participate in family life, even with help (Severe problem)",
+          "kr": "I konpran bann relasyon familyal me i pa kapab partisip dan en fason sinifikatif, menm avek led (Severe problem)"
+        },
+        {
+          "score": 3,
+          "en": "Does not understand family relationships or participate in them (Very severe or total problem)",
+          "kr": "I pa konpran bann relasyon familyal e i pa partisip ladan (Very severe or total problem)"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "group": "Social participation",
+      "en": "Interacting with known and unknown persons",
+      "kr": "Enterakte avek bann dimoun ki i konnen e ki i pa konnen",
+      "options": [
+        {
+          "score": 0,
+          "en": "Successful and appropriate interactions with known and unknown persons (No problem)",
+          "kr": "I enterakte avek sikse avek bann dimoun ki i konnen e bann ki i pa konnen (No problem)"
+        },
+        {
+          "score": 1,
+          "en": "Recognizes and communicates with persons she/he knows, but not with persons she does not know. Needs help to interact with strangers (Moderate problem)",
+          "kr": "I rekonnet e i kominik avek bann dimoun ki i konnen, me pa avek bann dimoun ki i pa konnen. I bezwen led pour enterakte avek bann etranze (Moderate problem)"
+        },
+        {
+          "score": 2,
+          "en": "Recognizes with difficulty persons with whom she/he is in daily contact. Cannot recognize persons she sees sporadically. Needs help for both (Severe problem)",
+          "kr": "I rekonnet avek difikilte bann dimoun ki i an kontak avek tou le zour. I pa kapab rekonnet bann dimoun ki i war rarman. I bezwen led pour tou le de (Severe problem)"
+        },
+        {
+          "score": 3,
+          "en": "Does not interact with known or unknown persons (cannot even recognize persons she sees frequently) (Very severe or total problem)",
+          "kr": "I pa enterakte avek bann dimoun ki i konnen oubyen ki i pa konnen (i pa kapab menm rekonnet bann dimoun ki i war souvan) (Very severe or total problem)"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "group": "Social participation",
+      "en": "Participating in community activities",
+      "kr": "Partisip dan bann aktivite kominoter",
+      "options": [
+        {
+          "score": 0,
+          "en": "Spontaneously, voluntarily, and actively participates; initiates activities (No problem)",
+          "kr": "Partisip spontaneman, volonterman, e aktivman dan bann aktivite; i pran linisyativ pour komans bann aktivite (No problem)"
+        },
+        {
+          "score": 1,
+          "en": "Passive and limited active, independent participation. Does not initiate activities and may require supervision (Moderate problem)",
+          "kr": "Partisipasyon i pasif e limite, menm si i endepandan. I pa pran linisyativ pour komans bann aktivite e i kapab bezwen sipervizyon (Moderate problem)"
+        },
+        {
+          "score": 2,
+          "en": "Passive observer but participates only with personal assistance or support (Severe problem)",
+          "kr": "I en obzervater pasif e i partisip selman avek lasistans oubyen sipor personnel (Severe problem)"
+        },
+        {
+          "score": 3,
+          "en": "No participation in community activities at all (Very severe or total problem)",
+          "kr": "I pa partisip ditou dan bann aktivite kominoter (Very severe or total problem)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+/* NARS - Needs Assessment
+   Deliberately close to the HCIS look, because it is the same system to the
+   people using it, and a second front door should not feel like a second
+   product. */
+
+:root {
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --bg: #f1f5f9;
+  --panel: #ffffff;
+  --brand: #0e7490;
+  --brand-dark: #155e75;
+  --good: #059669;
+  --warn: #d97706;
+  --bad: #dc2626;
+  --sidebar: #0f2744;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(15, 23, 42, .08), 0 1px 2px rgba(15, 23, 42, .04);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+h1, h2, h3 { margin: 0; font-weight: 650; letter-spacing: -.01em; }
+h1 { font-size: 22px; }
+h2 { font-size: 17px; }
+h3 { font-size: 14px; }
+a { color: var(--brand); }
+
+/* ------------------------------------------------------------- signing in */
+
+.signin {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  position: relative;
+  background: #0f2744 url('/assets/login-bg.jpg') center / cover no-repeat;
+}
+/* The photograph is bright on the right and dark on the left, so a plain card
+   on top of it is unreadable at one end and lost at the other. A scrim over
+   the whole thing evens it out and keeps the picture visible underneath. */
+.signin::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, rgba(15,39,68,.92) 0%, rgba(15,39,68,.72) 45%, rgba(15,39,68,.45) 100%);
+}
+.signin-card { position: relative; }
+
+/* The national arms. It arrives on a white background, so it is given a white
+   disc to sit on rather than being dropped onto a dark panel where it would
+   read as a white rectangle. */
+.crest {
+  width: 94px; height: 94px; border-radius: 50%;
+  background: #fff center / 84% no-repeat url('/assets/coat-of-arms.png');
+  box-shadow: 0 2px 10px rgba(8, 20, 40, .18);
+  margin: 0 auto 14px;
+}
+.side-crest {
+  width: 30px; height: 30px; border-radius: 50%; flex: 0 0 30px;
+  background: #fff center / 86% no-repeat url('/assets/coat-of-arms.png');
+}
+.side-top { display: flex; align-items: center; gap: 10px; }
+.side-top .side-words { min-width: 0; }
+.signin-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 24px 48px rgba(8, 20, 40, .28);
+}
+.signin-card h1 { margin-bottom: 4px; text-align: center; }
+/* The full name runs to three lines on a 400px card, so it is sized to read as
+   a title rather than to shout. */
+.signin-title { font-size: 19px; line-height: 1.3; }
+.signin-card .signin-sub { text-align: center; }
+.signin-sub { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+.signin-mark {
+  width: 44px; height: 44px; border-radius: 11px;
+  background: var(--brand); color: #fff;
+  display: grid; place-items: center;
+  font-weight: 700; margin-bottom: 16px;
+}
+
+/* ------------------------------------------------------------------ shell */
+
+.shell { display: flex; min-height: 100vh; }
+
+.side {
+  width: 236px;
+  flex: 0 0 236px;
+  background: var(--sidebar);
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+}
+.side-top { padding: 18px 18px 14px; border-bottom: 1px solid rgba(255, 255, 255, .08); }
+.side-top strong { color: #fff; display: block; font-size: 15px; }
+.side-top span { font-size: 11px; color: #94a3b8; }
+.side-group { padding: 16px 18px 6px; font-size: 10.5px; letter-spacing: .09em; color: #64748b; text-transform: uppercase; }
+.side a {
+  display: block; padding: 9px 18px; color: #cbd5e1;
+  text-decoration: none; font-size: 14px; border-left: 3px solid transparent;
+}
+.side a:hover { background: rgba(255, 255, 255, .05); color: #fff; }
+.side a.on { background: rgba(255, 255, 255, .09); color: #fff; border-left-color: var(--brand); }
+.side-foot { margin-top: auto; padding: 16px 18px; border-top: 1px solid rgba(255, 255, 255, .08); font-size: 12px; }
+
+.main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.topbar {
+  background: var(--panel); border-bottom: 1px solid var(--line);
+  padding: 14px 24px; display: flex; align-items: center; gap: 16px;
+}
+.topbar .who { margin-left: auto; text-align: right; font-size: 13px; }
+.topbar .who b { display: block; }
+.topbar .who span { color: var(--muted); font-size: 12px; }
+.content { padding: 24px; flex: 1; }
+
+/* ------------------------------------------------------------------ parts */
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow);
+}
+.card .n { font-size: 28px; font-weight: 680; letter-spacing: -.02em; }
+.card .l { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.card.warn .n { color: var(--warn); }
+
+.panel {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow); margin-top: 20px;
+}
+.panel-head {
+  padding: 14px 18px; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 12px;
+}
+.panel-head .sub { color: var(--muted); font-size: 12.5px; }
+.panel-body { padding: 18px; }
+
+table { width: 100%; border-collapse: collapse; }
+th {
+  text-align: left; font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); padding: 10px 18px; border-bottom: 1px solid var(--line); font-weight: 600;
+}
+td { padding: 12px 18px; border-bottom: 1px solid var(--line); font-size: 14px; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: #f8fafc; }
+td.ref { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+
+/* ------------------------------------------------------------------ forms */
+
+.field { margin-bottom: 16px; }
+.field > label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+.field .hint { font-size: 12px; color: var(--muted); margin-top: 4px; }
+input[type=text], input[type=password], input[type=date], input[type=number], select, textarea {
+  width: 100%; padding: 9px 11px; border: 1px solid #cbd5e1; border-radius: 8px;
+  font: inherit; color: var(--ink); background: #fff;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(14, 116, 144, .12);
+}
+input[aria-invalid=true] { border-color: var(--bad); }
+textarea { min-height: 84px; resize: vertical; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.err { color: var(--bad); font-size: 12.5px; margin-top: 4px; }
+
+button {
+  font: inherit; font-weight: 600; padding: 9px 16px; border-radius: 8px;
+  border: 1px solid transparent; cursor: pointer;
+}
+button[disabled] { opacity: .6; cursor: default; }
+.btn { background: var(--brand); color: #fff; }
+.btn:hover:not([disabled]) { background: var(--brand-dark); }
+.btn-plain { background: #fff; border-color: #cbd5e1; color: var(--ink); }
+.btn-plain:hover:not([disabled]) { background: #f8fafc; }
+.btn-wide { width: 100%; padding: 11px; }
+.actions { display: flex; gap: 10px; align-items: center; margin-top: 8px; }
+
+/* ----------------------------------------------------------------- states */
+
+.note { padding: 11px 14px; border-radius: 8px; font-size: 13.5px; margin-bottom: 16px; }
+.note-bad { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+.note-good { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+.note-info { background: #f0f9ff; color: #075985; border: 1px solid #bae6fd; }
+
+.empty { padding: 40px 18px; text-align: center; color: var(--muted); }
+.empty p { margin: 0 0 14px; }
+
+.pill {
+  display: inline-block; padding: 2px 9px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 600;
+}
+.pill-grey { background: #f1f5f9; color: #475569; }
+.pill-warn { background: #fef3c7; color: #92400e; }
+.pill-good { background: #d1fae5; color: #065f46; }
+
+.loading { padding: 40px; text-align: center; color: var(--muted); }
+
+/* Assessors work on a tablet, usually held upright. Hiding the sidebar there
+   left them with no way to move between screens at all - the links were still
+   in the page but inside something set to display:none, so they were in the
+   markup and out of reach. It folds into a bar across the top instead. */
+@media (max-width: 820px) {
+  .shell { flex-direction: column; }
+  .side {
+    width: auto; flex: 0 0 auto;
+    flex-direction: row; align-items: center;
+    overflow-x: auto; gap: 4px; padding: 0 8px;
+  }
+  .side-top { border-bottom: 0; padding: 12px 10px 12px 6px; flex: 0 0 auto; }
+  .side-group { display: none; }        /* the headings do not earn their room here */
+  .side a {
+    border-left: 0; border-bottom: 3px solid transparent;
+    padding: 14px 12px; white-space: nowrap; flex: 0 0 auto;
+  }
+  .side a.on { border-left: 0; border-bottom-color: var(--brand); }
+  .side-foot { display: none; }
+  .row { grid-template-columns: 1fr; }
+  .content { padding: 16px; }
+  .topbar { padding: 12px 16px; }
+  .topbar .who { font-size: 12px; }
+}
+
+/* Reading a question aloud from a tablet: the answers are the target, so give
+   them room rather than squeezing them to fit a heading nobody taps. */
+@media (max-width: 620px) {
+  .panel-head { flex-wrap: wrap; row-gap: 6px; }
+  .actions { flex-wrap: wrap; }
+}
+
+/* ---------------------------------------------------------- the interview */
+/* An assessor is reading these out loud in somebody's front room, holding a
+   tablet. Big targets, high contrast, nothing clever. */
+
+.answer {
+  display: flex; align-items: flex-start; gap: 14px; width: 100%;
+  text-align: left; background: #fff; border: 1.5px solid var(--line);
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+  cursor: pointer; font: inherit;
+}
+.answer:hover { border-color: var(--brand); background: #f8fdff; }
+.answer-on { border-color: var(--brand); background: #ecfeff; box-shadow: 0 0 0 3px rgba(14,116,144,.12); }
+
+.answer-mark {
+  flex: 0 0 30px; height: 30px; border-radius: 8px;
+  background: #f1f5f9; color: var(--muted);
+  display: grid; place-items: center; font-weight: 700; font-size: 14px;
+}
+.answer-on .answer-mark { background: var(--brand); color: #fff; }
+
+.answer-text { display: block; font-size: 15.5px; line-height: 1.45; }
+.answer-sev {
+  display: block; margin-top: 3px; font-size: 12px; font-weight: 600;
+  color: var(--muted); text-transform: uppercase; letter-spacing: .04em;
+}
+.answer-warn {
+  display: block; margin-top: 6px; font-size: 12px; color: var(--warn);
+}
+
+@media (max-width: 620px) {
+  .answer { padding: 12px; }
+  .answer-text { font-size: 15px; }
+}
