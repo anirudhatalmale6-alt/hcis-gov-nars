@@ -42,8 +42,19 @@ WHERE IT LIVES
 
 SIGNING IN
 
-  The same accounts as HCIS. Same database, same sign-in. An account with an
-  assessor role will see the assessment screens.
+  Use a GOVERNMENT BOX account - whatever gets you into HCIS on THIS
+  machine. NARS reads the same database as the HCIS on this box and uses
+  the same sign-in, so if it works for HCIS here it works for NARS here.
+
+  It will NOT accept an account from the office server. The two
+  installations have completely separate databases and separate accounts,
+  and an account on one has never been heard of by the other. evans.nars,
+  for example, exists only on the office box.
+
+  An account with an assessor role will see the assessment screens. Note
+  that on this box the two assessor accounts, m.albert and s.confiance,
+  are currently switched off - they need enabling before anyone can carry
+  out an assessment here.
 
 
 HOW IT WAS CHECKED

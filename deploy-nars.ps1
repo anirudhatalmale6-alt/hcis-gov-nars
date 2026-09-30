@@ -20,7 +20,8 @@
       and .css, NARS ships app.js, api.js, views.js, nars.css and three media
       files. This script refuses to run if that ever stops being true.
     * It asks for /rest/v1/, which this site already forwards to the data API
-      for HCIS. Same database, same sign-in.
+      for HCIS. Same database and same sign-in AS THE HCIS ON THIS BOX -
+      which is NOT the office server's database, and not its accounts.
 
   Nothing belonging to HCIS is touched: not its index.html, not its bundle,
   and not config.js.
@@ -110,8 +111,13 @@ Write-Host ''
 Say 'Open it at the same address as HCIS with /nars on the end, e.g.' 'Yellow'
 Say '  http://localhost/nars/' 'Yellow'
 Write-Host ''
-Say 'Sign in with the same accounts as HCIS - it is the same database and'
-Say 'the same sign-in. An assessor account will see the assessment screens.'
+Say 'Sign in with a GOVERNMENT BOX account - whatever gets you into HCIS' 'Yellow'
+Say 'on THIS machine. It will NOT accept an account from the office server:' 'Yellow'
+Say 'the two installations have separate databases and separate accounts.' 'Yellow'
+Write-Host ''
+Say 'An assessor account will see the assessment screens. On this box the'
+Say 'two assessor accounts (m.albert, s.confiance) are switched off, so they'
+Say 'need enabling before anyone can carry out an assessment here.'
 Write-Host ''
 Say 'A completed and released assessment then appears in HCIS under Needs'
 Say 'Assessment. That link is already in place from the catch-up.'
